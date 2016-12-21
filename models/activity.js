@@ -2,7 +2,7 @@ var Mongoose = require('mongoose');
 var Schema = Mongoose.Schema;
 
 var activitySchema = new Schema({
-    activityType: String,
+    type: String,
     description: String,
     quantity: Number,
     completedDate: Date,
