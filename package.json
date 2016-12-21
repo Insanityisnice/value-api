@@ -1,0 +1,14 @@
+{
+  "name": "neu-value-api",
+  "version": "1.0.0",
+  "description": "Domain logic for interacting with the value tracking system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Neudesic",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^4.7.4"
+  }
+}
