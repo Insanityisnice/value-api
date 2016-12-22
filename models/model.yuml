@@ -1,4 +1,4 @@
 // {type:class}
-[EmployeeProfile|email:string;tags:object]
+[Employee|email:string;tags:object]
 [ActivityType|name:string;category:string;description:string;value:number;requiresEvidence:boolean;minQuantity:number;maxQuantity:number;tags:object]
 [Activity|description:string;quantity:number;completedDate:date;evidence:url;notes:string;employee:string]

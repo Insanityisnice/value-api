@@ -9,6 +9,8 @@
   "author": "Neudesic",
   "license": "ISC",
   "dependencies": {
+    "babel": "^6.5.2",
+    "graphql": "^0.8.2",
     "mongoose": "^4.7.4"
   }
 }
