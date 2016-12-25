@@ -1,24 +1,11 @@
-// import mongoose from 'mongoose';
-// import schema from './models/activity/activitySchema.js'
-// let db = mongoose.connection;
-//
-// mongoose.connect('mongodb://test:tracking@ds054289.mlab.com:54289/tracking');
-//
-// module.exports = function(context, req) {
-//   graphql(schema, req.body)
-//     .then((result) => {
-//       res = result;
-//     });
-//     context.done(null, res);
-// };
-import express from 'express';
-import schema from './schema.js';
+const express = require('express');
+const schema = require('./schema.js');
 console.log('loaded till schema');
 
-import {graphql} from 'graphql';
-import bodyparser from 'body-parser';
+const {graphql} = require('graphql');
+const bodyparser = require('body-parser');
 
-import mongoose from 'mongoose';
+const mongoose =  require('mongoose');
 
 let db = mongoose.connection;
 

@@ -1,19 +1,19 @@
-import {
+const {
     GraphQLObjectType,
     GraphQLSchema,
     GraphQLString,
     GraphQLInt,
     GraphQLNonNull,
     GraphQLID
-} from 'graphql';
+} = require('graphql');
 
-import ActivityType from './activityTypeQL.js';
-import Activity from './activitySchema.js';
+const ActivityType = require('./activityTypeQL.js');
+const Activity = require('./activitySchema.js');
 
-export default {
+module.exports = {
     addActivity: {
         type: ActivityType,
-        args: { 
+        args: {
             type: { name:'type', type: new GraphQLNonNull(GraphQLString) },
             description: { name:'description', type: GraphQLString },
             quantity: { name:'quantity', type: new GraphQLNonNull(GraphQLInt) },
@@ -24,7 +24,7 @@ export default {
         },
         resolve: (root, {type, description, quantity, completedDate, evidence, employee, notes}) => {
             var newActivity = new Activity({
-                type:type, 
+                type:type,
                 description:description,
                 quantity:quantity,
                 completedDate:completedDate,
@@ -43,7 +43,7 @@ export default {
     updateActivity: {
         type: ActivityType,
         args: {
-            id: { name:'id', type: new GraphQLNonNull(GraphQLID) }, 
+            id: { name:'id', type: new GraphQLNonNull(GraphQLID) },
             type: { name:'type', type: new GraphQLNonNull(GraphQLString) },
             description: { name:'description', type: GraphQLString },
             quantity: { name:'quantity', type: new GraphQLNonNull(GraphQLInt) },

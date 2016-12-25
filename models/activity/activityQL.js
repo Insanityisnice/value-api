@@ -1,7 +1,7 @@
-import _ActivityType from './activityTypeQL.js';
-import _ActivityQueries from './activityQueriesQL.js';
-import _ActivityMutations from './activityMutationsQL.js';
+const _ActivityType = require('./activityTypeQL.js');
+const _ActivityQueries = require('./activityQueriesQL.js');
+const _ActivityMutations =  require('./activityMutationsQL.js');
 
-export const ActivityType = _ActivityType;
-export const ActivityQueries = _ActivityQueries;
-export const ActivityMutations = _ActivityMutations;
+module.exports.ActivityType = _ActivityType;
+module.exports.ActivityQueries = _ActivityQueries;
+module.exports.ActivityMutations = _ActivityMutations;

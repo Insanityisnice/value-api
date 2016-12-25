@@ -1,5 +1,5 @@
 // schema.js
-import {
+const {
   GraphQLObjectType,
   GraphQLSchema,
   GraphQLString,
@@ -7,16 +7,16 @@ import {
   GraphQLNonNull,
   GraphQLList,
   GraphQLID
-  } from 'graphql';
+} = require('graphql');
 
-import mongoose from 'mongoose';
-import Activity from './models/activity/activitySchema.js';
+const mongoose =  require('mongoose');
+const Activity =  require('./models/activity/activitySchema.js');
 
-import {
+const {
   ActivityQueries,
   ActivityMutations,
   ActivityType
-} from './models/activity/activityQL.js';
+} =  require('./models/activity/activityQL.js');
 
 
 let RootQuery = new GraphQLObjectType({
@@ -42,4 +42,5 @@ let schema = new GraphQLSchema({
   query: RootQuery,
   mutation: RootMutation
 });
-export default schema;
+
+module.exports = schema;

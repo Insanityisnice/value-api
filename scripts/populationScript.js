@@ -1,6 +1,6 @@
-import mongoose from 'mongoose';
+const mongoose =require('mongoose');
 
-import Activity from '../Models/activity/activitySchema.js';
+const Activity = require('../Models/activity/activitySchema.js');
 
 mongoose.connect('mongodb://test:tracking@ds054289.mlab.com:54289/tracking');
 

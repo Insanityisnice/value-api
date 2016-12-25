@@ -1,15 +1,15 @@
-import {
+const {
     GraphQLObjectType,
     GraphQLSchema,
     GraphQLString,
     GraphQLInt,
     GraphQLNonNull,
     GraphQLID
-} from 'graphql';
+} = require('graphql');
 
-import Activity from './activitySchema.js';
+const Activity = require('./activitySchema.js');
 
-export default new GraphQLObjectType({
+module.exports = new GraphQLObjectType({
     name: 'Activity',
     description: 'An activity being tracked.',
     fields: () => ({
