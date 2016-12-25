@@ -4,11 +4,12 @@ import {
     GraphQLString,
     GraphQLInt,
     GraphQLNonNull,
+    GraphQLList,
     GraphQLID
 } from 'graphql';
 
 import ActivityType from './activityTypeQL.js';
-import Actiivty from './activitySchema.js';
+import Activity from './activitySchema.js';
 
 export default {
     activities: {

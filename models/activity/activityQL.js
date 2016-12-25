@@ -4,4 +4,4 @@ import _ActivityMutations from './activityMutationsQL.js';
 
 export const ActivityType = _ActivityType;
 export const ActivityQueries = _ActivityQueries;
-export const activityMutations = _ActivityMutations;
+export const ActivityMutations = _ActivityMutations;
