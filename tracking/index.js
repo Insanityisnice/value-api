@@ -8,6 +8,6 @@ module.exports = function(context, req) {
     .then((result) => {
        context.log(result);
       res = result;
+      context.done(null, res);
     });
-    context.done(null, res);
 };

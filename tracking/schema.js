@@ -23,7 +23,7 @@ let RootQuery = new GraphQLObjectType({
   name: 'Query',      //Return this type of object
   fields: () => ({
     activity: ActivityQueries.activity,
-    activitys: ActivityQueries.activities
+    activities: ActivityQueries.activities
   })
 });
 
