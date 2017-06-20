@@ -1,16 +1,17 @@
-import {
+const {
     GraphQLObjectType,
     GraphQLSchema,
     GraphQLString,
     GraphQLInt,
     GraphQLNonNull,
+    GraphQLList,
     GraphQLID
-} from 'graphql';
+} = require('graphql');
 
-import ActivityType from './activityTypeQL.js';
-import Actiivty from './activitySchema.js';
+const ActivityType = require('./activityTypeQL.js');
+const Activity= require('./activitySchema.js');
 
-export default {
+module.exports = {
     activities: {
         type: new GraphQLList(ActivityType),
         resolve: Activity.getListOfActivities

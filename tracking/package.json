@@ -1,0 +1,25 @@
+{
+  "name": "neu-value-api",
+  "version": "1.0.0",
+  "description": "Domain logic for interacting with the value tracking system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node node_modules/babel/bin/babel-node.js function.js",
+    "populate": "node node_modules/babel/bin/babel-node.js scripts/populationScript.js"
+  },
+  "author": "Neudesic",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+  "express": "^4.13.3",
+    "graphql": "^0.8.2",
+    "mongoose": "^4.7.4",
+    "graphql-relay": "^0.1.0"
+  },
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "babel-relay-plugin": "^0.1.2",
+    "babelify": "^6.2.0"
+  }
+}

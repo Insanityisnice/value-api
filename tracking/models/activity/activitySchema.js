@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
 let ActivitySchema = new mongoose.Schema({
     id: { type:String, required:true, unique:true, index:true, default:mongoose.Types.ObjectId },
